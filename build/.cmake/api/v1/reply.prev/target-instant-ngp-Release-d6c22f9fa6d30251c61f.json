@@ -1,0 +1,395 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "instant-ngp"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 332,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 333,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG --generate-code=arch=compute_86,code=[compute_86,sm_86]"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Xcompiler=-Wno-float-conversion"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Xcompiler=-fno-strict-aliasing"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Xcompiler=-fms-extensions"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Xcompiler=-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "--extended-lambda"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "--expt-relaxed-constexpr"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "--use_fast_math"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Xcudafe=--diag_suppress=unrecognized_gcc_pragma"
+				},
+				{
+					"fragment" : "-std=c++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "GLFW_INCLUDE_VULKAN"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NGP_GUI"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NGP_OPTIX"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NGP_VERSION=\"1.0dev\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NGP_VULKAN"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "TCNN_MIN_GPU_ARCH=86"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/dlss/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/glfw/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/imgui"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/filesystem"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/glm"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/nanovdb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/NaturalSort"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tinylogger"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/codelibrary"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/optix"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/build"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/zstr/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/dependencies"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/dependencies/cutlass/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/dependencies/cutlass/tools/util/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/dependencies/fmt/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/yblin/Documents/GitHub/instant-ngp/dependencies/tiny-cuda-nn/dependencies/libcudacxx-main/include"
+				}
+			],
+			"language" : "CUDA",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "ngp::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "tiny-cuda-nn::@83d64acc3a33ea5cdae1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@d83c10a472d296e6d475"
+		},
+		{
+			"id" : "glfw_objects::@e43ad0a4af27ecc346ee"
+		}
+	],
+	"id" : "instant-ngp::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fms-extensions -fPIC -fopenmp -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/yblin/Documents/GitHub/instant-ngp/dependencies/dlss/lib/Linux_x86_64",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-L/usr/lib/x86_64-linux-gnu/stubs",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/yblin/Documents/GitHub/instant-ngp/dependencies/dlss/lib/Linux_x86_64",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/posix_thread.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/osmesa_context.c.o",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libngp.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvulkan.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lnvsdk_ngx",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLEW.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/tiny-cuda-nn/libtiny-cuda-nn.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcuda",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dependencies/tiny-cuda-nn/dependencies/fmt/libfmt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudadevrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudart",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "instant-ngp",
+	"nameOnDisk" : "instant-ngp",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cu",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

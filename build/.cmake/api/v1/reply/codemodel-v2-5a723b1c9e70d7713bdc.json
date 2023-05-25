@@ -1,0 +1,265 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "dependencies/tiny-cuda-nn",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-dependencies.tiny-cuda-nn-Release-244d36402ca2d4b66af4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "dependencies/tiny-cuda-nn",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "dependencies/tiny-cuda-nn/dependencies/fmt",
+					"jsonFile" : "directory-dependencies.tiny-cuda-nn.dependencies.fmt-Release-79ea37250b3f04cfbbd4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "dependencies/tiny-cuda-nn/dependencies/fmt",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "dependencies/glfw",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-dependencies.glfw-Release-323070d887787c7c55fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "dependencies/glfw"
+				},
+				{
+					"build" : "dependencies/glfw/src",
+					"jsonFile" : "directory-dependencies.glfw.src-Release-6e60439920837a8a22b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "dependencies/glfw/src",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "dependencies/pybind11",
+					"jsonFile" : "directory-dependencies.pybind11-Release-739b9974f598190afbd9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "dependencies/pybind11"
+				},
+				{
+					"build" : "dependencies/zstr",
+					"jsonFile" : "directory-dependencies.zstr-Release-bd9d794b5fbf56a6b4ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "dependencies/zstr"
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "instant-ngp",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "tiny-cuda-nn",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "FMT",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "pybind11",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "zstr",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "fmt::@d83c10a472d296e6d475",
+					"jsonFile" : "target-fmt-Release-61a7866d7638aba38b90.json",
+					"name" : "fmt",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "glfw::@e43ad0a4af27ecc346ee",
+					"jsonFile" : "target-glfw-Release-2c938a0c2a1c72f7f91a.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "glfw_objects::@e43ad0a4af27ecc346ee",
+					"jsonFile" : "target-glfw_objects-Release-1d72893a1c126904c3c6.json",
+					"name" : "glfw_objects",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "instant-ngp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-instant-ngp-Release-11c04e25a4a010849dba.json",
+					"name" : "instant-ngp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ngp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ngp-Release-81987df054361f7e5456.json",
+					"name" : "ngp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "optix_program::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-optix_program-Release-d6fb592340c6a5f5578a.json",
+					"name" : "optix_program",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tiny-cuda-nn::@83d64acc3a33ea5cdae1",
+					"jsonFile" : "target-tiny-cuda-nn-Release-88f14c6f0405c0f46d26.json",
+					"name" : "tiny-cuda-nn",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yblin/Documents/GitHub/instant-ngp/build",
+		"source" : "/home/yblin/Documents/GitHub/instant-ngp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

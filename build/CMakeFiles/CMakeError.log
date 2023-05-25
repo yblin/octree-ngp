@@ -1,0 +1,120 @@
+Performing C++ SOURCE FILE Test HAVE_FILESYSTEM_WITHOUT_LIB failed with the following output:
+Change Dir: /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c16e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c16e0.dir/build.make CMakeFiles/cmTC_c16e0.dir/build
+gmake[1]: 进入目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_c16e0.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_FILESYSTEM_WITHOUT_LIB -I/home/yblin/Documents/GitHub/instant-ngp/dependencies/OpenXR-SDK/src/common -fms-extensions -fPIC -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -fPIE -std=c++14 -o CMakeFiles/cmTC_c16e0.dir/src.cxx.o -c /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c16e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c16e0.dir/link.txt --verbose=1
+/usr/bin/c++  -fms-extensions -fPIC -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE CMakeFiles/cmTC_c16e0.dir/src.cxx.o -o cmTC_c16e0 
+/usr/bin/ld: CMakeFiles/cmTC_c16e0.dir/src.cxx.o: in function `std::experimental::filesystem::v1::is_regular_file(std::experimental::filesystem::v1::__cxx11::path const&)':
+src.cxx:(.text._ZNSt12experimental10filesystem2v115is_regular_fileERKNS1_7__cxx114pathE[_ZNSt12experimental10filesystem2v115is_regular_fileERKNS1_7__cxx114pathE]+0x18): undefined reference to `std::experimental::filesystem::v1::status(std::experimental::filesystem::v1::__cxx11::path const&)'
+/usr/bin/ld: CMakeFiles/cmTC_c16e0.dir/src.cxx.o: in function `std::experimental::filesystem::v1::__cxx11::path::path<char [2], std::experimental::filesystem::v1::__cxx11::path>(char const (&) [2])':
+src.cxx:(.text._ZNSt12experimental10filesystem2v17__cxx114pathC2IA2_cS3_EERKT_[_ZNSt12experimental10filesystem2v17__cxx114pathC5IA2_cS3_EERKT_]+0x6e): undefined reference to `std::experimental::filesystem::v1::__cxx11::path::_M_split_cmpts()'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_c16e0.dir/build.make:99：cmTC_c16e0] 错误 1
+gmake[1]: 离开目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_c16e0/fast] 错误 2
+
+
+Source file was:
+#include <stdfs_conditions.h>
+    
+    #if defined(USE_FINAL_FS) && USE_FINAL_FS
+    #include <filesystem>
+    using namespace std::filesystem;
+    #endif
+    #if defined(USE_EXPERIMENTAL_FS) && USE_EXPERIMENTAL_FS
+    #include <experimental/filesystem>
+    using namespace std::experimental::filesystem;
+    #endif
+    int main() {
+        (void)is_regular_file("/");
+        return 0;
+    }
+    
+    
+Performing C++ SOURCE FILE Test HAVE_FILESYSTEM_NEEDING_LIBCXXFS failed with the following output:
+Change Dir: /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_59f91/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59f91.dir/build.make CMakeFiles/cmTC_59f91.dir/build
+gmake[1]: 进入目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_59f91.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_FILESYSTEM_NEEDING_LIBCXXFS -I/home/yblin/Documents/GitHub/instant-ngp/dependencies/OpenXR-SDK/src/common -fms-extensions -fPIC -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -fPIE -std=c++14 -o CMakeFiles/cmTC_59f91.dir/src.cxx.o -c /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_59f91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59f91.dir/link.txt --verbose=1
+/usr/bin/c++  -fms-extensions -fPIC -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE CMakeFiles/cmTC_59f91.dir/src.cxx.o -o cmTC_59f91  -lc++fs 
+/usr/bin/ld: 找不到 -lc++fs: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_59f91.dir/build.make:99：cmTC_59f91] 错误 1
+gmake[1]: 离开目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_59f91/fast] 错误 2
+
+
+Source file was:
+#include <stdfs_conditions.h>
+    
+    #if defined(USE_FINAL_FS) && USE_FINAL_FS
+    #include <filesystem>
+    using namespace std::filesystem;
+    #endif
+    #if defined(USE_EXPERIMENTAL_FS) && USE_EXPERIMENTAL_FS
+    #include <experimental/filesystem>
+    using namespace std::experimental::filesystem;
+    #endif
+    int main() {
+        (void)is_regular_file("/");
+        return 0;
+    }
+    
+    
+Determining if the function __secure_getenv exists failed with the following output:
+Change Dir: /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5ea55/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5ea55.dir/build.make CMakeFiles/cmTC_5ea55.dir/build
+gmake[1]: 进入目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5ea55.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=__secure_getenv -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -fPIE -o CMakeFiles/cmTC_5ea55.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ea55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ea55.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=__secure_getenv -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -rdynamic CMakeFiles/cmTC_5ea55.dir/CheckFunctionExists.c.o -o cmTC_5ea55 
+/usr/bin/ld: CMakeFiles/cmTC_5ea55.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `__secure_getenv'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_5ea55.dir/build.make:99：cmTC_5ea55] 错误 1
+gmake[1]: 离开目录“/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_5ea55/fast] 错误 2
+
+
+
+Performing C++ SOURCE FILE Test SUPPORTS_Werrorunusedargument failed with the following output:
+Change Dir: /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01c39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_01c39.dir/build.make CMakeFiles/cmTC_01c39.dir/build
+gmake[1]: Entering directory '/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_01c39.dir/src.cxx.o
+/usr/bin/c++ -DSUPPORTS_Werrorunusedargument  -fms-extensions -fPIC -Wall -Werror=unused-parameter -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -fPIE   -Werror=unused-argument -std=c++14 -o CMakeFiles/cmTC_01c39.dir/src.cxx.o -c /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: error: '-Werror=unused-argument': no option '-Wunused-argument'; did you mean '-Wunused-dummy-argument'?
+gmake[1]: *** [CMakeFiles/cmTC_01c39.dir/build.make:78: CMakeFiles/cmTC_01c39.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_01c39/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test SUPPORTS_C_Werrorunusedargument failed with the following output:
+Change Dir: /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f3dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f3dd.dir/build.make CMakeFiles/cmTC_9f3dd.dir/build
+gmake[1]: Entering directory '/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f3dd.dir/src.c.o
+/usr/bin/cc -DSUPPORTS_C_Werrorunusedargument  -Wall -Werror=unused-parameter -DCMAKE_CXX_STANDARD=17 -DCMAKE_CXX_STANDARD_REQUIRED=TRUE -fPIE   -Werror=unused-argument -o CMakeFiles/cmTC_9f3dd.dir/src.c.o -c /home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: '-Werror=unused-argument': no option '-Wunused-argument'; did you mean '-Wunused-dummy-argument'?
+gmake[1]: *** [CMakeFiles/cmTC_9f3dd.dir/build.make:78: CMakeFiles/cmTC_9f3dd.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/yblin/Documents/GitHub/instant-ngp/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9f3dd/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
